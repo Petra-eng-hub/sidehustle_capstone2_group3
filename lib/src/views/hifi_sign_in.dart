@@ -73,3 +73,28 @@ class HifiScreen extends StatelessWidget {
     );
   }
 }
+
+class Home extends StatefulWidget {
+  @override
+  _HomeState createState() => _HomeState();
+}
+class _HomeState extends State<Home> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+          title: const Text('Navigate to a new screen on Button click'),
+          backgroundColor: Colors.teal),
+      body: Center(
+        child: FlatButton(
+          color: Colors.teal,
+          textColor: Colors.white,
+          onPressed: () {
+            
+          },
+          child: Text('GO TO SCREEN 2'),
+        ),
+      ),
+    );
+  }
+}
