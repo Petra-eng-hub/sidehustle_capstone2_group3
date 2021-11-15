@@ -63,3 +63,27 @@ class LofiScreen extends StatelessWidget {
     );
   }
 }
+class Screen2 extends StatefulWidget {
+  @override
+  _Screen2State createState() => _Screen2State();
+}
+class _Screen2State extends State<Screen2> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+          title: const Text('Navigate to a new screen on Button click'),
+          backgroundColor: Colors.blueAccent),
+      body: Center(
+        child: FlatButton(
+          color: Colors.blueAccent,
+          textColor: Colors.white,
+          onPressed: () {
+            
+          },
+          child: Text('GO TO HOME'),
+        ),
+      ),
+    );
+  }
+}
